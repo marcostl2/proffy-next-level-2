@@ -9,21 +9,23 @@
 
     .logo-container{
         text-align: center;
-        margin-bottom: 3.2rem;
+        height: 100%;
+        // margin-bottom: 3%;
 
         img{
             height:10rem;
         }
         h2{
             font-weight: 500;
-            font-size:2.4rem;
+            font-size:2rem;
             line-height: 4.6rem;
-            margin-top:0.8rem;
+            // margin-top:0.8rem;
         }
     }
 
     .hero-image{
         width: 100%;
+        // margin: 4% 0 4% 0;
     }
 
     .buttons-container{
@@ -33,7 +35,7 @@
 
         a{
             width: 30rem;
-            height:10.4rem;
+            height:80px;
             border-radius: 0.8rem;
             font: 700 2.0rem Archivo;
             display: flex;
@@ -41,12 +43,14 @@
             justify-content: center;
             text-decoration: none;
             color:var(--color-button-text);
+            transition: background 0.3s;
 
             &:first-child{
                 margin-right: 1.6rem;
             }
             img{
                 width: 4rem;
+                margin-right: 5px;
             }
         }
         .study{
@@ -64,8 +68,47 @@
             }
         }
     }
+    .total-connections{
+        display: flex;
+        justify-content: center;
 
+        img{
+            margin-left: 5px;
+        }
+    }
+}
 
+@media (min-width:1100px){
+    .logo-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo-container{
+            margin-right:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero-image{
+            margin-left: 5rem;
+        }
+        h2{
+            text-align: left;
+        }
+    }
+    .buttons-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (max-width:1100px){
+    .hero-image{
+        margin: 4% 0 4% 0;
+    }
 }
 
 
