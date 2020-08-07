@@ -2,7 +2,7 @@ import React from 'react'
 
 function TeacherForm(){
     return(
-        <div></div>
+        <div>Oiee</div>
     )
 }
 
